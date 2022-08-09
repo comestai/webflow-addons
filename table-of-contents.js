@@ -21,8 +21,6 @@
   // CREATE TOC
   const toc = document.createElement("a");
   toc.classList.add('toc-wrapper')
-  toc.style.position = "sticky";
-  toc.style.top = "10px";
   document.querySelector(".sticky-wrapper").prepend(toc);
 
   document
