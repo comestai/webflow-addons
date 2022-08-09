@@ -19,7 +19,7 @@
     { rootMargin: "0px 0px -75% 0px" }
   );
   // CREATE TOC
-  const toc = document.createElement("a");
+  const toc = document.createElement("div");
   toc.classList.add('toc-wrapper')
   document.querySelector(".sticky-wrapper").prepend(toc);
 
@@ -39,7 +39,7 @@
       const item = document.createElement("a"); // creates an anchor element called "item" for each h2
       item.style.display = "block";
       item.innerHTML = heading.innerHTML; // gives each item the text of the corresponding heading
-      item.setAttribute("class", "tocitem"); // gives each item the correct class
+      item.setAttribute("class", "toc-item"); // gives each item the correct class
       item.setAttribute("href", "#" + str); // gives each item the correct anchor link
       toc.appendChild(item); // places each item inside the Table of Contents div
     });
